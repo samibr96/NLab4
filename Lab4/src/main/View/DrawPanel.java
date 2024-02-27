@@ -27,9 +27,9 @@ public class DrawPanel extends JPanel{
 
         try {
 
-            BufferedImage volvoImage = ImageIO.read(new File("src\\pics\\Volvo240.jpg"));
-            BufferedImage saabImage = ImageIO.read(new File("src\\pics\\Saab95.jpg"));
-            BufferedImage scaniaImage = ImageIO.read(new File("src\\pics\\Scania.jpg"));
+            BufferedImage volvoImage = ImageIO.read(new File("Lab4/src/pics/Volvo240.jpg"));
+            BufferedImage saabImage = ImageIO.read(new File("Lab4/src/pics/Saab95.jpg"));
+            BufferedImage scaniaImage = ImageIO.read(new File("Lab4/src/pics/Scania.jpg"));
 
             imageMap = new HashMap<>();
             imageMap.put("Volvo240", volvoImage);
