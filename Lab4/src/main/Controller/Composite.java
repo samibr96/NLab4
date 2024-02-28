@@ -5,12 +5,13 @@ import main.Modell.Scania;
 import main.Modell.Vehicle;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Composite implements IComposite {
 
-    private final ArrayList<Vehicle> cars;
+    private final List<Vehicle> cars;
 
-    public Composite(ArrayList<Vehicle> cars) {
+    public Composite(List<Vehicle> cars) {
         this.cars = cars;
     }
 
@@ -39,6 +40,7 @@ public class Composite implements IComposite {
         }
     }
 
+
     public void lowerBed() {
         for (Vehicle car : cars) {
             if (car instanceof Scania) {
@@ -64,27 +66,7 @@ public class Composite implements IComposite {
 
     }
 
-    @Override
-    public void move() {
 
-        for(Vehicle car: cars){
-            car.move();
-        }
-    }
 
-    @Override
-    public void turnLeft() {
-        for(Vehicle car: cars){
-            car.turnLeft();
-        }
-    }
-
-    @Override
-    public void turnRight() {
-
-        for(Vehicle car: cars){
-            car.turnRight();
-        }
-    }
 
 }

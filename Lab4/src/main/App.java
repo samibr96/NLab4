@@ -29,8 +29,8 @@ public class App {
         carController.cars.add(CarAssembler.assembleVolvo(0, 0));
         carController.cars.add(CarAssembler.assembleScania(0, 200));
 
-        carController.frame = new CarView("CarSim 1.0", carController);
-        buttonListeners = new CarButtonListeners(carController);
+        carController.frame = new CarView("CarSim 1.0");
+        buttonListeners = new CarButtonListeners(carController, carController.frame);
         buttonListeners.Listeners();
 
         timer.start();
